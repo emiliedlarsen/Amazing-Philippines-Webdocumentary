@@ -1,0 +1,121 @@
+*{
+    padding:0; margin:0;
+    box-sizing: border-box;
+}
+
+            /* Samme skrifttype og farve til al tekst i dokumentet*/
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    color: white; 
+}
+
+            /* Billeder og video propotioner */
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+video {
+    width: 100%;
+    display: block;
+}
+
+            /* Almen tekst */
+
+p {
+    text-align: center;   
+    font-size: 1.8rem; 
+    word-break: normal; 
+    z-index: 1; 
+}
+
+            /* Teksten øverst på siden */
+
+h1 {
+    font-size: 4.8rem;
+    padding-left: 2%;
+}
+
+h2 {
+    font-size: 3.2rem; 
+    padding-left: 2%;
+}
+
+            /* øverste billede */
+
+.top { 
+    position: absolute;  
+    z-index: 1; 
+    width: 100%; 
+    word-break: normal; 
+    color: white; 
+    top: 2%;
+} 
+ 
+            /* Del 3, video 1 med tekstboble over */ 
+
+.boble {
+    position: absolute; 
+    z-index: 1;
+    border-radius: 100%;
+    background-color: rgba(255, 250, 240, 0.3);
+    width: 30%;
+    height: 50%;
+    padding: 4% 5%;
+    margin: 10% 6% 0%;
+}
+
+            /* Del 4, billede med tektsboble over */
+
+.bobleEt {
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: rgba(255, 250, 240, 0.3);
+    width: 30%;
+    height: 50%;
+    padding: 3% 5%;
+    margin: 10% 0% 0% 70%;
+}
+
+
+            /* Overlayet der kommer frem når man trykker på knappen */
+
+#overlay1, #overlay2 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 250, 240, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: black;
+    transform: translate(-50%,-50%);
+}
+
+            /* Knappernes layout og design */
+
+button {
+    z-index: 5;
+    text-align: center; 
+    width: 100%; 
+    border: 0;
+    background-color: rgba(255, 250, 240, 0.4);
+    cursor: pointer;
+    font-size: 1.5rem; 
+    color: white;
+}
