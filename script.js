@@ -43,23 +43,30 @@ function off(id) {
 
 
 
- /*window.addEventListener("scroll", function(){
-          
-    var myVideo = document.getElementById("vid1"); // select audio
-    var video = document.getElementById("endelige5");
-    console.log( "Er div #video synlig? " + elFllVsbl( vid1 ) );
+/**
+ * scroll: test om element er synligt, og gør noget ved videoen ...
+ **/
+
+// varibale
+var minVideo = document.getElementById("vid1"); // tag som indeholder videoen
+var video = document.getElementById("endelige5"); // mp4 filen
+
+// scoll
+ window.addEventListener("scroll", function(){
     
-    if (elFllVsbl ( video )){ 
-        if (!(myVideo.curentTime > 0)){
-            myVideo.play(); // play audio
+    if (elFllVsbl ( minVideo )){ 
+        if (!(minVideo.curentTime > 1)){
+            console.log("TRUE, så start video her ...");
+            video.play();
         }
     } else {
-        //myVideo.pause();
-        myVideo.currentTime = 0; // rewind the sound
+        console.log("FALSE, sæt video på pause her ...")
+        // tjek selv hvordan man sætter videoen på pause ... ;-)
+        video.pause();
     }
  }
 )
 
 function elFllVsbl(el){
     return ( el.getBoundingClientRect().top>=0 &&  el.getBoundingClientRect().bottom<window.innerHeight);
-}*/
+}
