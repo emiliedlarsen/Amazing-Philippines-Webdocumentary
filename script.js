@@ -40,3 +40,26 @@ function off(id) {
     knap.innerHTML = "Læs mere her";
     knap.setAttribute('onclick', 'on('+ id +')');
 }
+
+
+
+ window.addEventListener("scroll", function(){
+          
+    var myVideo = document.getElementById("vid1"); // select audio
+    var video = document.getElementById("endelige5");
+    console.log( "Er div #video synlig? " + elFllVsbl( vid1 ) );
+    
+    if (elFllVsbl ( video )){ 
+        if (!(myVideo.curentTime > 0)){
+            myVideo.play(); // play audio
+        }
+    } else {
+        //myVideo.pause();
+        myVideo.currentTime = 0; // rewind the sound
+    }
+ }
+)
+
+function elFllVsbl(el){
+    return ( el.getBoundingClientRect().top>=0 &&  el.getBoundingClientRect().bottom<window.innerHeight);
+}
