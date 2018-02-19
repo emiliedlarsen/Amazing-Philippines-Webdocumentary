@@ -2,23 +2,32 @@
 Javacsript til Amazing Philippines
 Webdokumentar 2018
 */
-    var audioGalleri = [
+var audioGalleri = [
     "beach2.mp3"
-] ; 
+];
+
+// Find alle video elementer
+var allVids = document.getElementsByTagName("video");
+
+/* 
+    Loop igennem alle video elementer og sæt volumen
+    til en startværdi på 50% (e.g. 0.5)
+*/
+for(var i = 0; allVids.length > i; i++) {
+    allVids[i].volume = 0.5;
+}
 
 visAudio(audioGalleri[0]);
 
 function visAudio( audio ) {
     document.write(
-    '<main>'
-    + '<audio autoplay loop>'
-    + '<source src="audio/'
-    + audio
-    + '" type="audio/mpeg">'
-    + '</audio>'
-    + '</main>'
-    
-    
+        '<main>'
+        + '<audio autoplay loop>'
+        + '<source src="audio/'
+        + audio
+        + '" type="audio/mpeg">'
+        + '</audio>'
+        + '</main>'
     )
 } 	
 
