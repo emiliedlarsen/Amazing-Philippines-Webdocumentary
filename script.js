@@ -6,6 +6,8 @@ var audioGalleri = [
     "beach2.mp3"
 ];
 
+// Onscroll når der er video tag i vinduet
+
 // Find alle video elementer
 var allVids = document.getElementsByTagName("video");
 
@@ -15,6 +17,28 @@ var allVids = document.getElementsByTagName("video");
 */
 for(var i = 0; allVids.length > i; i++) {
     allVids[i].volume = 0.5;
+}
+
+
+// scoll
+ window.addEventListener("scroll", function(){
+    var video; 
+    for (var i = 0; allVids.length > i; i++) {
+        video = allVids[i];
+        if (isInViewPort(video)){
+            video.play();
+        } else {
+            video.pause();
+        }
+    }
+ });
+
+function isInViewPort(el) {
+    var rect = el.getBoundingClientRect(); //Tager bredde og højde af skærmen
+    var html = document.documentElement;
+    
+    return (rect.top >= -100 && rect.bottom <= (window.innerHeight + 150 || html.clientHeight + 150));
+//Den giver svar tilbage minus 100 for at få den til at starte lidt før 
 }
 
 visAudio(audioGalleri[0]);
@@ -52,30 +76,3 @@ function off(id) {
 
 
 
-/**
- * scroll: test om element er synligt, og gør noget ved videoen ...
- **/
-
-// varibale
-var minVideo = document.getElementById("vid1"); // tag som indeholder videoen
-var video = document.getElementById("endelige5"); // mp4 filen
-
-// scoll
- window.addEventListener("scroll", function(){
-    
-    if (elFllVsbl ( minVideo )){ 
-        if (!(minVideo.curentTime > 1)){
-            console.log("TRUE, så start video her ...");
-            video.play();
-        }
-    } else {
-        console.log("FALSE, sæt video på pause her ...")
-        // tjek selv hvordan man sætter videoen på pause ... ;-)
-        video.pause();
-    }
- }
-)
-
-function elFllVsbl(el){
-    return ( el.getBoundingClientRect().top>=0 &&  el.getBoundingClientRect().bottom<window.innerHeight);
-}
