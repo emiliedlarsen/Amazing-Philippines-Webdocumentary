@@ -3,7 +3,7 @@ Javacsript til Amazing Philippines
 Webdokumentar 2018
 */
     var audioGalleri = [
-    "beach.mp3"
+    "beach2.mp3"
 ] ; 
 
 visAudio(audioGalleri[0]);
@@ -43,7 +43,7 @@ function off(id) {
 
 
 
- window.addEventListener("scroll", function(){
+ /*window.addEventListener("scroll", function(){
           
     var myVideo = document.getElementById("vid1"); // select audio
     var video = document.getElementById("endelige5");
@@ -62,4 +62,4 @@ function off(id) {
 
 function elFllVsbl(el){
     return ( el.getBoundingClientRect().top>=0 &&  el.getBoundingClientRect().bottom<window.innerHeight);
-}
+}*/

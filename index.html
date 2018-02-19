@@ -26,8 +26,15 @@
 
             <!-- Billede 2 logo intet tekst felt     -->
         <main class="logo">
-
-            <img src="img/foto8.png" alt="Amazing Philippines">
+            
+            <div class="topEt">
+            
+            <img src="img/logo_preview.png" alt="Amazing Philippines">
+            
+            </div>
+            
+            <img src="img/baggrund.png" alt="Amazing Philippines">
+            
 
         </main>
         
@@ -36,19 +43,15 @@
         <main class="tre">
             <div class="boble">
                 <p>
-                Her står der tekst om indholdet i videoen/billedet!
+                Thomas Munk<br>
+                Medejer af Amazing Philippines
                 </p>
-            <button id="knap1" onclick=on(1)>Læs mere her</button>
             </div>
                 
             <video onclick="this.paused ? this.play() : this.pause()" controls>
                 <source src="vid/endelige1.mp4" type="video/mp4">
             </video>
             
-            <!--   OVERLAY     -->
-            <div id="overlay1" onclick=off(1)>
-                <div id="text">Tekst 1</div>
-            </div>
         </main>
         
             <!-- Billede 3 (del 4) med tekstboble på -->
@@ -57,16 +60,18 @@
   
             <div class="bobleEt">
                 <p>
-                Tekstboble 2 dkfdmksglj sdkgjklda kglæafkglæ a
+                "Mine oplevelser på rejsen var, at det var enormt 'down to earth', 'back to basics', 'off the grid'..." <br>
+                - Laura Bernhard Nyholm
                 </p>
-                <button id="knap2" onclick="on(2)">Læs mere her</button>
+                <button id="knap1" onclick="on(1)">Læs mere her</button>
             </div>
             
             <img src="img/foto5.jpg" alt="Amazing Philippines">
             
                 <!--   OVERLAY     -->
-            <div id="overlay2" onclick="off(2)">
-                <div id="text">Mere information om den bestemte artikkel</div>
+            <div id="overlay1" onclick="off(1)">
+                <div id="text">"Mine oplevelser på rejsen var, at det var enormt 'down to earth', 'back to basics', 'off the grid'. Vi var helt derude, hvor kragerne vender, hvor der vitterligt ikke var flere mennesker. Kun indfødte og os."  <br>
+                - Laura Bernhard Nyholm </div>
             </div>
             
         </main>
@@ -75,16 +80,25 @@
         
         <main class="fem">
            
-            <div class="boble">
+            <div class="bobleTo">
                 <p>
-                Her står der tekst om indholdet i videoen/billedet!
+                ”Det lokale værtspar Wendy og Rimar og deres børn tog os ind, som en del af deres lille familie i de to måneder, jeg var der..." <br>
+                – Laura Bernhard Nyholm
                 </p>
-            <button id="knap" onclick="on()">Læs mere her</button>
+            <button id="knap2" onclick="on(2)">Læs mere her</button>
             </div>
                      
             <video controls onclick="this.paused ? this.play() : this.pause()">
                 <source src="vid/working3.mp4" type="video/mp4">
             </video>
+            
+            
+            
+                    <!--   OVERLAY     -->
+            <div id="overlay2" onclick="off(2)">
+                <div id="text"> ”Det lokale værtspar Wendy og Rimar og deres børn tog os ind, som en del af deres lille familie i de to måneder, jeg var der. De var helt fantastiske mennesker. Med så stor glæde i deres liv og så stort overskud, til trods for, at de ikke lever i kæmpe huse, kører kæmpe biler eller har mange penge på kontoen.” <br>
+                – Laura Bernhard Nyholm </div>
+            </div>
         </main>
         
             <!-- Video 3 (del 6) -->
@@ -93,9 +107,8 @@
            
             <div class="boble">
                 <p>
-                Her står der tekst om indholdet i videoen/billedet!
+                Thomas fortæller om første gang han satte sine fødder på Secret Island.
                 </p>
-            <button id="knap" onclick="on()">Læs mere her</button>
             </div>
             
             <video controls onclick="this.paused ? this.play() : this.pause()">
@@ -106,17 +119,22 @@
             <!-- Billede 4 (del 7) -->
             
         <main class="syv">
-           
-            <div class="containerEt">   
+              
                 <div class="bobleEt">
                     <p>
-                    Tekstboble 2 dkfdmksglj sdkgjklda kglæafkglæ a
+                     ”Secret Island er en lille ubeboet ø med en camp til 20 mennesker. Der er de mest suveræne kitesurf-forhold, hvilket især var det jeg kom efter..."
                     </p>
-                    <button id="knap" onclick="on()">Læs mere her</button>
+                <button id="knap3" onclick="on(3)">Læs mere her</button>
                 </div>
-            </div>
             
             <img src="img/foto2.jpg" alt="Amazing Philippines">
+                    
+                     <!--   OVERLAY     -->
+            <div id="overlay3" onclick="off(3)">
+                <div id="text"> ”Secret Island er en lille ubeboet ø med en camp til 20 mennesker. Der er de mest suveræne kitesurf-forhold, hvilket især var det jeg kom efter. Der er næsten altid sol og vind. Og så er det så smukt og varmt. Maden bliver serveret og man kan gøre hvad man har lyst til. Jeg havde fem uger på Secret, det vil sige at jeg har været der væsentlig længere end de fleste, hvilket også betød at jeg følte et tab, når der var nogen man var begyndt at holde af, tog fra øen igen. For fællesskabet på øen, er virkelig i højsæde, vi er ikke ret mange, og vi er alle sammen sammen.” – Pi Andrea Benedikte Sestoft
+                </div>
+            </div>
+     
             
         </main>
    
@@ -126,9 +144,8 @@
            
             <div class="boble">
                 <p>
-                Her står der tekst om indholdet i videoen/billedet!
+                Thomas fortæller hvordan øen blev deres
                 </p>
-            <button id="knap" onclick="on()">Læs mere her</button>
             </div>
             
             <video controls onclick="this.paused ? this.play() : this.pause()">
@@ -139,34 +156,59 @@
             <!-- Billede 5 (del 9) -->
             
         <main class="ni">
+           <div class="bobleEt">
+               <p>
+                   ”Øen rummede alt fra højskoleaftener til beachvolley, højskolesang til yoga og mindfulness. Flotte øer, hvor der var tid til fordybelse...”<br> – Laura Bernhard Nyholm
+               </p>
+            <button id="knap4" onclick="on(4)">Læs mere her</button>
+           </div>
+           
             <img src="img/foto9.jpg" alt="Amazing Philippines">
+            
+                    <!--   OVERLAY     -->
+            <div id="overlay4" onclick="off(4)">
+                <div id="text">
+                ”Vi drev højskole, så på den måde, levede øen op til alle forventninger. Den rummede alt fra højskoleaftener til beachvolley, højskolesang til yoga og mindfulness. Flotte øer, hvor der var tid til fordybelse. Der var fantastiske muligheder for gode kulturmøder. Fantastiske muligheder for dykning, snorkling og SUP. Og mange andre virkelig gode rammer.” <br>
+                – Laura Bernhard Nyholm
+                </div>
+            </div>
+            
         </main>
                   
             <!-- Video 5 (del 10) -->
                 
         <main class="ti">
-           
-            <div class="boble">
-                <p>
-                Her står der tekst om indholdet i videoen/billedet!
-                </p>
-            <button id="knap" onclick="on()">Læs mere her</button>
-            </div>
             
             <video controls onclick="this.paused ? this.play() : this.pause()">
                 <source src="vid/paddleboard.mp4" type="video/mp4">
             </video>
+            
         </main> 
                                   
             <!-- Billede 6 (del 11) -->
             
         <main class="elleve">
+           
+            <div class="bobleTre">
+                <p>
+                ”Hvis man surfer, er det et must. For dem som ikke surfer, er det en rejse som ingen anden, du kan ikke opleve det her noget andet sted, det er så speciel en rejse, selvom man har været på en øde ø i 40 dage, vil man ikke hjem.” <br>
+                – Tobias Tikøb Olesen
+                </p>
+            </div>
+            
             <img src="img/foto4.jpg" alt="Amazin Philippines">
         </main>
                
             <!-- Billede 7 (del 12) -->
             
         <main class="tolv">
+           
+           <div class="bobleFire">
+               <p>
+               ”Rejsen levede i ALLERHØJESTE grad op til mine forventninger. Mine forventninger kunne godt pakke sammen, det var meget mere og meget bedre og meget mere ubeskriveligt.” <br>
+               – Laura Bernhard Nyholm
+               </p>
+           </div>
             <img src="img/foto1.jpg" alt="Amazing Philippines">
         </main>    
         
@@ -176,9 +218,8 @@
            
             <div class="boble">
                 <p>
-                Her står der tekst om indholdet i videoen/billedet!
+                Hvordan gør Amazing Philippines en forskel på deres øer?
                 </p>
-            <button id="knap" onclick="on()">Læs mere her</button>
             </div>
             
             <video controls onclick="this.paused ? this.play() : this.pause()">
@@ -189,19 +230,21 @@
             <!-- Billede 8 (del 14) -->
             
         <main class="fjorten">
+           
+           <div class="bobleFem">
+               <p>
+                   ”Er blevet rigtig kulturrig, og så har jeg fået rigtig meget respekt for mennesker som lever på andre måder end vi gør.” <br> 
+                   – Tobias Tikøb Olesen
+               </p>
+           </div>
+           
             <img src="img/foto12.jpg" alt="Amazing Philippines">
+            
         </main>
         
             <!-- Video 7 (del 15) -->
         
         <main class="femten">
-           
-            <div class="boble">
-                <p>
-                Her står der tekst om indholdet i videoen/billedet!
-                </p>
-            <button id="knap" onclick="on()">Læs mere her</button>
-            </div>
             
             <video controls onclick="this.paused ? this.play() : this.pause()">
                 <source src="vid/singing.mp4" type="video/mp4">
@@ -211,12 +254,27 @@
             <!-- Billede 9 (del 16) -->
             
         <main class="seksten">
+           
+           <div class="bobleFem">
+               <p>
+               ”Jeg tror på, at jeg skal være ordentlig overfor mine omgivelser - miljøet og verden. Ordentlig overfor mine medmennesker, venner og familie. Ordentlig overfor mig selv, altså huske mig selv, når hverdagen går for hurtigt.” <br>
+               – Laura Bernhard Nyholm
+               </p>           
+            </div>
+            
             <img src="img/foto6.jpg" alt="Amazing Philippines">
+            
         </main>    
 
             <!-- Billede 10 (del 17) -->
                
         <main class="sytten">
+           <div class="bobleTo">
+               <p>
+               ”Stedet kan mere end ord kan beskrive. At komme ud og trække stikket ud, være til i nuet og naturen og komme væk fra hverdagens hamsterhjul er noget, alle mennesker, især i vores samfund, burde prøve og opleve.” <br>
+               – Laura Bernhard Nyholm
+               </p>
+           </div>
             <img src="img/foto11.jpg" alt="Amazing Philippines">
         </main>       
                
@@ -226,13 +284,14 @@
            
             <div class="boble">
                 <p>
-                Her står der tekst om indholdet i videoen/billedet!
+                Hvordan kan du gøre en forskel for lokalbefolkningen? 
+                <br><br>
+                "Det er meget op til dig selv" <br>- Thomas Munk
                 </p>
-            <button id="knap" onclick="on()">Læs mere her</button>
             </div>
             
             <div id="vid1">
-               <video id="endelige5" controls>
+               <video id="endelige5" controls onclick="this.paused ? this.play() : this.pause()">
                 <source src="vid/endelige5.mp4" type="video/mp4">
             </video>
         </div>
@@ -241,7 +300,25 @@
             <!-- Billede 11 (del 19) -->
                                                  
         <main class="nitten">
+           
+           <div class="bobleEt">
+               <p>
+               ”Jeg tror og håber på at jeg er blevet mere åben og positiv over for ukendte ting og oplevelser..."<br>
+               - Pi Andrea Benedikte Sestoft
+
+               </p>
+            <button id="knap5" onclick="on(5)">Læs mere her</button>
+           </div>
             <img src="img/foto7.jpg" alt="Amazing Philippines">
+            
+             
+                    <!--   OVERLAY     -->
+            <div id="overlay5" onclick="off(5)">
+                <div id="text">
+                 ”Jeg tror og håber på at jeg er blevet mere åben og positiv over for ukendte ting og oplevelser. Desuden er det nødvendig at kunne indgå kompromiser og tage tingene med et smil, når man er sådan et lille fællesskab alene på en øde ø. Så åbenhed og selvsikkerhed, er noget jeg mener at jeg har taget med hjem der fra. Desuden synes jeg at jeg er blevet mere klar over mine værdier og holdninger, man fik virkelig tid til at tænke over tingene.
+                 Jeg håber og ønsker også at jeg er blevet mere afslappet med tingene og tager alting lidt mere med et smil end før” - Pi Andrea Benedikte Sestoft
+                </div>
+            </div>
         </main>
             
             <!-- Video 9 (del 20) -->
@@ -255,18 +332,41 @@
             <!-- Billede 12 (del 21) -->
             
         <main class="tyveEt">
+           
+           <div class="bobleFem">
+               <p>
+                ”Jeg tror jeg mindes morgnerne bedst. Morgnerne, hvor de andre ikke var stået op. At vågne i paradisiske omgivelser og gå alene ned på stranden og opleve solen stå op – at være så meget en del af naturen, og i et med mig selv var helt fantastisk.” <br>
+                – Laura Bernhard Nyholm
+               </p>
+           </div>
+           
             <img src="img/foto13.jpg" alt="Amazing Philippines">
         </main>
         
             <!-- Billede 13 (del 22) -->
             
         <main class="tyveTo">
+           
+           <div class="bobleEt">
+               <p>
+                ”Jeg tror jeg blev meget bevidst om, hvor vigtigt det er for mig at omgive mig i gode omgivelser med rigtig dejlige mennesker. At det betyder meget for mig.”<br>
+                – Laura Bernhard Nyholm
+               </p>
+           </div>
+           
             <img src="img/foto10.jpg" alt="Amazing Philippines">
         </main>
         
             <!-- Video 10 (del 23) -->
             
         <main class="tyveTre">
+           
+           <div class="boble">
+               <p>
+                Hvilken oplevelse kan man tage med sig hjem?    
+               </p>
+           </div>
+           
             <video controls onclick="this.paused ? this.play() : this.pause()">
                 <source src="vid/endelige6.mp4" type="video/mp4">
             </video>
@@ -275,6 +375,14 @@
             <!-- Billede 14 (del 24) -->
         
         <main class="tyveFire">
+           
+           <div class="bobleFire">
+               <p>
+                   ”En helt særlig oplevelse var nok nytårsaften, hvor de lokale festede med, det var en helt speciel oplevelse, at se to helt forskellige kulturer have det så fedt sammen.” <br>
+                   – Tobias Tikøb Olesen
+               </p>
+           </div>
+            
             <img src="img/foto.jpg" alt="Amazing Philippines">
         </main>
         

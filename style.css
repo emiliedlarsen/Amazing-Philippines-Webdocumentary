@@ -27,9 +27,10 @@ video {
 
 p {
     text-align: center;   
-    font-size: 1.8rem; 
+    font-size: 1.1rem; 
     word-break: normal; 
     z-index: 1; 
+    text-transform: uppercase;
 }
 
             /* Teksten øverst på siden */
@@ -42,6 +43,7 @@ h1 {
 h2 {
     font-size: 3.2rem; 
     padding-left: 2%;
+
 }
 
             /* øverste billede */
@@ -54,37 +56,122 @@ h2 {
     color: white; 
     top: 2%;
 } 
- 
-            /* Del 3, video 1 med tekstboble over */ 
 
-.boble {
+            /* Animation til logo på billede 2 */
+
+@keyframes logo {
+        from { 
+            width: 2%; 
+            margin: 40% 45%;
+        }
+        to {
+            width: 60%;
+            margin: 20% 20%; 
+        }
+}
+
+.topEt {
+    position: absolute;
+    z-index: 1; 
+    width: 60%; 
+    margin: 20% 20%;
+    animation-name: logo; 
+    animation-duration: 5s; 
+    animation-timing-function: ease-in-out; 
+    animation-iteration-count: infinite;
+}
+ 
+            /* Standard size til tekstboblerne  */ 
+
+.boble, .bobleEt, .bobleTo, .bobleTre, .bobleFire, .bobleFem {
     position: absolute; 
     z-index: 1;
     border-radius: 100%;
-    background-color: rgba(255, 250, 240, 0.3);
-    width: 26%;
-    height: 46%;
-    padding: 4% 5%;
-    margin: 10% 0% 0% 70%;
+    background-color: rgba(255, 250, 240, 0.5);
+    width: 350px; 
+    height: 350px;
 }
 
-            /* Del 4, billede med tektsboble over */
+
+
+            /* Tekstboblerne ovenpå endelige/Thomas videoerne midten til højre */
+.boble {
+    padding: 100px 40px 40px; 
+    margin: 10% 0% 0% 70%;
+    width: 300px;
+    height: 300px;
+    transition: transform .2s;
+}
+
+.boble:hover {
+    transform: scale(1.2); 
+}
+
+            /* Tekstboble øverst til højre over billeder*/
 
 .bobleEt {
-    position: absolute;
-    z-index: 1;
-    border-radius: 50%;
-    background-color: rgba(255, 250, 240, 0.3);
-    width: 30%;
-    height: 50%;
-    padding: 3% 5%;
-    margin: 10% 0% 0% 70%;
+    margin: 2% 0% 4% 50%;
+    padding: 64px 37px 20px;
+    transition: transform .2s;
 }
+
+.bobleEt:hover {
+    transform: scale(1.2); 
+}
+
+            /* Tekstboble nederst venstre hjørne */
+
+.bobleTo {
+    margin: 25% 2%;
+    padding: 69px 31px;
+    transition: transform .2s;
+}
+
+.bobleTo:hover {
+    transform: scale(1.2); 
+}
+
+            /* Tekstboble nederst højre hjørne */
+
+.bobleTre {
+    margin: 25% 0% 0% 65%; 
+    padding: 60px 35px 20px;
+    transition: transform .2s;
+}
+
+.bobleTre:hover {
+    transform: scale(1.2); 
+}
+
+            /* Tekstboble øverst venstre hjørne */
+
+.bobleFire {
+    margin: 2% 1%;
+    padding: 70px 35px;
+    transition: transform .2s;
+}
+
+.bobleFire:hover {
+    transform: scale(1.2); 
+}
+
+            /* Tekstboble midt venstre */
+
+.bobleFem {
+    margin: 15% 2%;
+    padding: 70px 35px;
+    transition: transform .2s;
+}
+
+.bobleFem:hover {
+    transform: scale(1.2); 
+}
+ 
 
 
             /* Overlayet der kommer frem når man trykker på knappen */
 
-#overlay1, #overlay2 {
+#overlay1, #overlay2, #overlay3, #overlay4, #overlay5 {
     position: fixed;
     display: none;
     width: 100%;
@@ -93,7 +180,7 @@ h2 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 250, 240, 0.5);
+    background-color: rgba(255, 250, 240, 0.7);
     z-index: 2;
     cursor: pointer;
 }
@@ -102,9 +189,10 @@ h2 {
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 50px;
+    font-size: 40px;
     color: black;
     transform: translate(-50%,-50%);
+    font-size: 2.2rem;
 }
 
             /* Knappernes layout og design */
@@ -114,8 +202,18 @@ button {
     text-align: center; 
     width: 100%; 
     border: 0;
-    background-color: rgba(255, 250, 240, 0.4);
+    background-color: rgba(255, 250, 240, 0.0);
     cursor: pointer;
-    font-size: 1.5rem; 
+    font-size: 1.3rem; 
     color: white;
+    font-weight: bold;
+    transition: transform .5s;
 }
+
+button:hover {
+    transform: scale(1.2);
+}
+
+
+
+
