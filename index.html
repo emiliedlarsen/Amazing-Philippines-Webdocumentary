@@ -90,7 +90,7 @@
             <button id="knap2" onclick="on(2)">Læs mere her</button>
             </div>
                      
-            <video controls onclick="this.paused ? this.play() : this.pause()">
+            <video onclick="this.paused ? this.play() : this.pause()" loop>
                 <source src="vid/working3.mp4" type="video/mp4">
             </video>
             
@@ -181,7 +181,7 @@
                 
         <main class="ti">
             
-            <video controls>
+            <video loop onclick="this.paused ? this.play() : this.pause()">
                 <source src="vid/paddleboard.mp4" type="video/mp4">
             </video>
             
@@ -248,7 +248,7 @@
         
         <main class="femten">
             
-            <video controls onclick="this.paused ? this.play() : this.pause()">
+            <video loop onclick="this.paused ? this.play() : this.pause()">
                 <source src="vid/singing.mp4" type="video/mp4">
             </video>
         </main>
@@ -292,11 +292,9 @@
                 </p>
             </div>
             
-            <div id="vid1">
-                <video id="endelige5" controls>
+                <video controls onclick="this.paused ? this.play() : this.pause()">
                     <source src="vid/endelige5.mp4" type="video/mp4">
                 </video>
-            </div>
         </main>                       
                        
             <!-- Billede 11 (del 19) -->
@@ -328,7 +326,7 @@
             
         <main class="tyve">
            
-            <video controls onclick="this.paused ? this.play() : this.pause()">
+            <video loop onclick="this.paused ? this.play() : this.pause()">
                 <source src="vid/SUP.mp4" type="video/mp4">
             </video>
             
